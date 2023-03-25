@@ -1,0 +1,59 @@
+#container {
+    font-family: arial;
+    font-size: 24px;
+    margin: 150px;
+    text-align: right;
+    margin-right: 35%;
+}
+
+#cod_cnae {
+    height: 40px;
+    width: 230px;
+}
+
+.inputs {
+    height: 30px;
+    width: 300px;
+    margin-right: 3%;
+}
+
+.interno {
+    margin-right: 3%;
+}
+
+#cadastrar {
+    height: 40px;
+    width: 150px;
+    border-radius: 16px;
+    background-color: rgb(0, 72, 255);
+    color: rgb(255, 255, 255);
+    margin-right: 16%;
+}
+
+.button {
+    padding: 20px 10px;
+    width: 200px;
+    background-color: hsl(0, 0%, 41%);
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.button:hover {
+    padding: 20px 10px;
+    width: 200px;
+    background-color: hsl(0, 0%, 9%);
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#alvara {
+    display: none;
+}

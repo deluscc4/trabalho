@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div id="container">
+        <form name="form de cadastro" action="php/processa-dados-form.php" method="POST">
+            <h1>Cadastro de fornecedores</h1>
+            Nome do fornecedor: <input required class="inputs" type="text" name="nome" /> <p></p>
+            Endereço: <input class="inputs" type="text" name="endereco" required/> <p></p>
+            Telefone: <input class="inputs" type="text" name="telefone" required/> <p></p>
+            <div class="interno">
+                <!-- Radio buttons -->
+                Desconto IPI:
+                <input checked type="radio" id="desconto_ipi_sim" name="desc_ipi" value="sim">
+                <label for="desconto_ipi_sim">Sim</label>
+                <input type="radio" id="desconto_ipi_nao" name="desc_ipi" value="nao">
+                <label for="desconto_ipi_nao">Não</label><p></p>
+                <!-- Drop-down list -->
+                <label for="cod_cnae">Código CNAE:</label>
+                <select name="cod_cnae" id="cod_cnae">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                </select><p></p>
+                <!-- Checkboxes -->
+                Ramo:
+                <input type="checkbox" id="alimentacao" name="checkbox" value="alimentacao">
+                <label for="alimentacao">Alimentação</label>
+                <input type="checkbox" id="calcado" name="checkbox" value="calcado">
+                <label for="calcado">Calçado</label>
+                <input type="checkbox" id="construcao" name="checkbox" value="construcao">
+                <label for="construcao">Construção</label><p></p>
+                <!-- Upload -->
+                <form name="form de upload" action="php/processa-dados-form.php" method="POST">
+                Alvará: <label for="alvara" class="button">Enviar arquivo</label>
+                <input display="none" class="button" id="alvara" type="file" name="alvara"><p></p>
+                </form>
+                <input id="cadastrar" type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
